@@ -211,12 +211,17 @@ namespace Poderosa.Protocols {
             if (response[3] == 3) {
                 byte[] t = new byte[1];
                 s.Receive(t, 0, 1, SocketFlags.None);
-                byte[] t2 = new byte[t[0]];
+                byte[] t2 = new byte[t[0]+2];
                 s.Receive(t2, 0, t2.Length, SocketFlags.None);
             }
             else if (response[3] == 1) {
                 byte[] t = new byte[6];
                 s.Receive(t, 0, 6, SocketFlags.None);
+            }
+            else if (response[3] == 4)
+            {
+                byte[] t = new byte[24];
+                s.Receive(t, 0, t.Length, SocketFlags.None);
             }
             else
                 throw new IOException("unexpected destination addr type " + response[3]);
