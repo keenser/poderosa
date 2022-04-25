@@ -278,8 +278,8 @@ namespace Granados.Poderosa.KeyFormat {
                         throw new SSHException(Strings.GetString("UnsupportedEllipticCurveInKeyPair"));
                     }
 
-                    ECPoint ecPublicKeyPoint;
-                    if (!ECPoint.Parse(publicKey, curve, out ecPublicKeyPoint)) {
+                    PKI.ECPoint ecPublicKeyPoint;
+                    if (!PKI.ECPoint.Parse(publicKey, curve, out ecPublicKeyPoint)) {
                         throw new SSHException(Strings.GetString("KeysAreBroken"));
                     }
 
