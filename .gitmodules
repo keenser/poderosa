@@ -1,0 +1,6 @@
+[submodule ".\\ContributedPlugins\\connectprofile"]
+	path = .\\ContributedPlugins\\connectprofile
+	url = git@github.com:keenser/poderosa-connectprofile-plugin.git
+[submodule "ContributedPlugins/broadcastcommand"]
+	path = ContributedPlugins/broadcastcommand
+	url = git@github.com:keenser/poderosa-broadcastcommand-plugin.git
