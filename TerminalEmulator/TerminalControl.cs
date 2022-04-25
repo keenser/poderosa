@@ -968,7 +968,7 @@ namespace Poderosa.Terminal {
             }
 
             if (_scrollBar.Enabled) {
-                int d = args.Delta / 120; //開発環境だとDeltaに120。これで1か-1が入るはず
+                int d = args.Delta; //開発環境だとDeltaに120。これで1か-1が入るはず
                 d *= GEnv.Options.WheelAmount;
 
                 int newval = _scrollBar.Value - d;
