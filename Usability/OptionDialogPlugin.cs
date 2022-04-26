@@ -158,8 +158,10 @@ namespace Poderosa.Usability {
         protected Control CreateScrollablePanel(Control innerControl) {
             Panel panel = new Panel();
             panel.AutoScroll = true;
+            panel.BackColor = innerControl.BackColor;
             innerControl.Location = new Point(0, 0);
             innerControl.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top;
+            innerControl.Size= new Size(panel.Width, innerControl.Height);
             panel.Controls.Add(innerControl);
             return panel;
         }
