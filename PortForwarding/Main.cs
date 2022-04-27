@@ -31,10 +31,15 @@ namespace Poderosa.PortForwarding {
         public static void Main(string[] args) {
             if (ActivateAnotherInstance())
                 return;
+            if (Environment.OSVersion.Version.Major >= 6)
+                SetProcessDPIAware();
             LoadEnv();
             Run();
             SaveEnv();
         }
+
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        private static extern bool SetProcessDPIAware();
 
         private static ChannelProfileCollection _channels;
         private static Options _options;
