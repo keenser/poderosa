@@ -95,40 +95,46 @@ namespace Poderosa.Forms {
             // 
             // _charDecodeErrorBehaviorLabel
             // 
+            this._charDecodeErrorBehaviorLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._charDecodeErrorBehaviorLabel.Location = new System.Drawing.Point(24, 8);
             this._charDecodeErrorBehaviorLabel.Name = "_charDecodeErrorBehaviorLabel";
-            this._charDecodeErrorBehaviorLabel.Size = new System.Drawing.Size(160, 23);
+            this._charDecodeErrorBehaviorLabel.Size = new System.Drawing.Size(200, 23);
             this._charDecodeErrorBehaviorLabel.TabIndex = 0;
             this._charDecodeErrorBehaviorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // _charDecodeErrorBehaviorBox
             // 
-            this._charDecodeErrorBehaviorBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this._charDecodeErrorBehaviorBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._charDecodeErrorBehaviorBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this._charDecodeErrorBehaviorBox.Location = new System.Drawing.Point(271, 8);
+            this._charDecodeErrorBehaviorBox.Location = new System.Drawing.Point(230, 8);
             this._charDecodeErrorBehaviorBox.Name = "_charDecodeErrorBehaviorBox";
-            this._charDecodeErrorBehaviorBox.Size = new System.Drawing.Size(152, 24);
+            this._charDecodeErrorBehaviorBox.Size = new System.Drawing.Size(193, 24);
             this._charDecodeErrorBehaviorBox.TabIndex = 1;
             // 
             // _bufferSizeLabel
             // 
+            this._bufferSizeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._bufferSizeLabel.Location = new System.Drawing.Point(24, 32);
             this._bufferSizeLabel.Name = "_bufferSizeLabel";
-            this._bufferSizeLabel.Size = new System.Drawing.Size(96, 23);
+            this._bufferSizeLabel.Size = new System.Drawing.Size(200, 23);
             this._bufferSizeLabel.TabIndex = 2;
             this._bufferSizeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // _bufferSize
             // 
-            this._bufferSize.Location = new System.Drawing.Point(271, 32);
+            this._bufferSize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this._bufferSize.Location = new System.Drawing.Point(230, 32);
             this._bufferSize.MaxLength = 5;
             this._bufferSize.Name = "_bufferSize";
-            this._bufferSize.Size = new System.Drawing.Size(152, 22);
+            this._bufferSize.Size = new System.Drawing.Size(193, 22);
             this._bufferSize.TabIndex = 3;
             // 
             // _additionalWordElementLabel
             // 
+            this._additionalWordElementLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._additionalWordElementLabel.Location = new System.Drawing.Point(24, 56);
             this._additionalWordElementLabel.Name = "_additionalWordElementLabel";
             this._additionalWordElementLabel.Size = new System.Drawing.Size(200, 23);
@@ -137,62 +143,73 @@ namespace Poderosa.Forms {
             // 
             // _additionalWordElementBox
             // 
-            this._additionalWordElementBox.Location = new System.Drawing.Point(271, 56);
+            this._additionalWordElementBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this._additionalWordElementBox.Location = new System.Drawing.Point(230, 56);
             this._additionalWordElementBox.Name = "_additionalWordElementBox";
-            this._additionalWordElementBox.Size = new System.Drawing.Size(152, 22);
+            this._additionalWordElementBox.Size = new System.Drawing.Size(193, 22);
             this._additionalWordElementBox.TabIndex = 5;
             // 
             // _disconnectNotificationLabel
             // 
             this._disconnectNotificationLabel.Location = new System.Drawing.Point(24, 80);
             this._disconnectNotificationLabel.Name = "_disconnectNotificationLabel";
-            this._disconnectNotificationLabel.Size = new System.Drawing.Size(160, 23);
+            this._disconnectNotificationLabel.Size = new System.Drawing.Size(200, 23);
             this._disconnectNotificationLabel.TabIndex = 6;
             this._disconnectNotificationLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // _disconnectNotification
             // 
+            this._disconnectNotification.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._disconnectNotification.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this._disconnectNotification.Location = new System.Drawing.Point(271, 80);
+            this._disconnectNotification.Location = new System.Drawing.Point(230, 80);
             this._disconnectNotification.Name = "_disconnectNotification";
-            this._disconnectNotification.Size = new System.Drawing.Size(152, 24);
+            this._disconnectNotification.Size = new System.Drawing.Size(193, 24);
             this._disconnectNotification.TabIndex = 7;
             // 
             // _closeOnDisconnect
             // 
+            this._closeOnDisconnect.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._closeOnDisconnect.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this._closeOnDisconnect.Location = new System.Drawing.Point(24, 104);
             this._closeOnDisconnect.Name = "_closeOnDisconnect";
-            this._closeOnDisconnect.Size = new System.Drawing.Size(192, 20);
+            this._closeOnDisconnect.Size = new System.Drawing.Size(399, 20);
             this._closeOnDisconnect.TabIndex = 8;
             // 
             // _beepOnBellChar
             // 
+            this._beepOnBellChar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._beepOnBellChar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this._beepOnBellChar.Location = new System.Drawing.Point(24, 128);
             this._beepOnBellChar.Name = "_beepOnBellChar";
-            this._beepOnBellChar.Size = new System.Drawing.Size(288, 20);
+            this._beepOnBellChar.Size = new System.Drawing.Size(399, 20);
             this._beepOnBellChar.TabIndex = 9;
             // 
             // _allowsScrollInAppMode
             // 
+            this._allowsScrollInAppMode.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._allowsScrollInAppMode.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this._allowsScrollInAppMode.Location = new System.Drawing.Point(24, 152);
             this._allowsScrollInAppMode.Name = "_allowsScrollInAppMode";
-            this._allowsScrollInAppMode.Size = new System.Drawing.Size(288, 20);
+            this._allowsScrollInAppMode.Size = new System.Drawing.Size(399, 20);
             this._allowsScrollInAppMode.TabIndex = 11;
             // 
             // _keepAliveCheck
             // 
+            this._keepAliveCheck.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._keepAliveCheck.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this._keepAliveCheck.Location = new System.Drawing.Point(24, 176);
             this._keepAliveCheck.Name = "_keepAliveCheck";
-            this._keepAliveCheck.Size = new System.Drawing.Size(244, 20);
+            this._keepAliveCheck.Size = new System.Drawing.Size(283, 20);
             this._keepAliveCheck.TabIndex = 12;
             this._keepAliveCheck.CheckedChanged += new System.EventHandler(this.OnKeepAliveCheckChanged);
             // 
             // _keepAliveIntervalBox
             // 
+            this._keepAliveIntervalBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._keepAliveIntervalBox.Location = new System.Drawing.Point(383, 176);
             this._keepAliveIntervalBox.MaxLength = 2;
             this._keepAliveIntervalBox.Name = "_keepAliveIntervalBox";
@@ -202,6 +219,7 @@ namespace Poderosa.Forms {
             // 
             // _keepAliveLabel
             // 
+            this._keepAliveLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._keepAliveLabel.Location = new System.Drawing.Point(316, 176);
             this._keepAliveLabel.Name = "_keepAliveLabel";
             this._keepAliveLabel.Size = new System.Drawing.Size(50, 20);
@@ -334,10 +352,12 @@ namespace Poderosa.Forms {
             // 
             // _alertOnPasteNewLineCharCheck
             // 
+            this._alertOnPasteNewLineCharCheck.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._alertOnPasteNewLineCharCheck.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this._alertOnPasteNewLineCharCheck.Location = new System.Drawing.Point(8, 12);
             this._alertOnPasteNewLineCharCheck.Name = "_alertOnPasteNewLineCharCheck";
-            this._alertOnPasteNewLineCharCheck.Size = new System.Drawing.Size(375, 24);
+            this._alertOnPasteNewLineCharCheck.Size = new System.Drawing.Size(406, 24);
             this._alertOnPasteNewLineCharCheck.TabIndex = 0;
             this._alertOnPasteNewLineCharCheck.UseVisualStyleBackColor = true;
             // 
