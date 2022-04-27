@@ -139,6 +139,14 @@ namespace Poderosa.Forms {
                 return false;
         }
 
+        protected override bool ProcessDialogKey(Keys keyData)
+        {
+            if ((keyData & Keys.Alt) == Keys.Alt)
+                return true;
+            else
+                return base.ProcessDialogKey(keyData);
+        }
+
         protected bool _closeCancelled;
         public CommandResult CancellableClose() {
             _closeCancelled = false;
