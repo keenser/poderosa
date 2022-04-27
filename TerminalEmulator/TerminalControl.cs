@@ -429,6 +429,11 @@ namespace Poderosa.Terminal {
                     this.SendChar('\t');
                     return true;
                 }
+                else if (modifiers == Keys.Shift && IsScrollKey(keybody))
+                {
+                    ProcessScrollKey(keybody);
+                    return true;
+                }
                 else if (IsSequenceKey(keybody)) {
                     ProcessSequenceKey(modifiers, keybody);
                     return true;
@@ -541,6 +546,9 @@ namespace Poderosa.Terminal {
         }
 
         private void ProcessScrollKey(Keys key) {
+            if (_VScrollBar.LargeChange == 0)
+                return;
+
             TerminalDocument doc = GetDocument();
             int current = doc.TopLineNumber - doc.FirstLineNumber;
             int newvalue = 0;
@@ -565,8 +573,8 @@ namespace Poderosa.Terminal {
                     break;
             }
 
-            if (newvalue < 0)
-                newvalue = 0;
+            if (newvalue < _VScrollBar.Minimum)
+                newvalue = _VScrollBar.Minimum;
             else if (newvalue > _VScrollBar.Maximum + 1 - _VScrollBar.LargeChange)
                 newvalue = _VScrollBar.Maximum + 1 - _VScrollBar.LargeChange;
 

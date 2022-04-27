@@ -132,6 +132,9 @@
     <EmbeddedResource Include="strings_ja.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="TerminalControl.resx">
+      <DependentUpon>TerminalControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WarningWithDisableOption.resx">
       <SubType>Designer</SubType>
       <DependentUpon>WarningWithDisableOption.cs</DependentUpon>
