@@ -41,6 +41,9 @@ namespace Poderosa.Executable {
         //実行開始
         [STAThread]
         public static void Main(string[] args) {
+            if (Environment.OSVersion.Version.Major >= 6)
+                SetProcessDPIAware();
+
             try {
                 Run(args);
             }
@@ -48,6 +51,8 @@ namespace Poderosa.Executable {
                 RuntimeUtil.ReportException(ex);
             }
         }
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        private static extern bool SetProcessDPIAware();
     }
 
 }
