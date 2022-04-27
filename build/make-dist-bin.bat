@@ -16,18 +16,19 @@ MD "%DOCDIST_EN%"
 MD "%DOCDIST_JA%"
 
 copy "%BINDIR%\Poderosa.exe" "%DIST%"
-copy "%BINDIR%\Poderosa.pdb" "%DIST%"
 
 copy "%BINDIR%\Poderosa.Plugin.dll" "%DIST%"
-copy "%BINDIR%\Poderosa.Plugin.pdb" "%DIST%"
 
 copy "%BINDIR%\Granados.dll" "%DIST%"
-copy "%BINDIR%\Granados.pdb" "%DIST%"
 
 for %%P in (Core Macro PortForwardingCommand Protocols SerialPort TerminalEmulator TerminalSession UI Usability XZModem Pipe SFTP) do (
   MD "%DIST%\%%P"
   copy "%BINDIR%\Poderosa.%%P.dll" "%DIST%\%%P"
-  copy "%BINDIR%\Poderosa.%%P.pdb" "%DIST%\%%P"
+)
+
+for %%P in (ConnectProfile BroadcastCommand) do (
+  MD "%DIST%\%%P"
+  copy "%BINDIR%\Contrib.%%P.dll" "%DIST%\%%P"
 )
 
 MD "%DIST%\Protocols\Cygterm"
@@ -38,9 +39,7 @@ copy "%PROJDIR%\Misc\Macro\Sample\*.js" "%DIST%\Macro\Sample"
 
 MD "%DIST%\Portforwarding"
 copy "%BINDIR%\Portforwarding.exe" "%DIST%\Portforwarding"
-copy "%BINDIR%\Portforwarding.pdb" "%DIST%\Portforwarding"
 copy "%BINDIR%\Granados.dll" "%DIST%\Portforwarding"
-copy "%BINDIR%\Granados.pdb" "%DIST%\Portforwarding"
 
 copy "%PROJDIR%\LICENSE.txt" "%DIST%"
 copy "%PROJDIR%\ChangeLog.txt" "%DIST%"
@@ -59,7 +58,6 @@ REM =====================================
 for %%P in ( ExtendPaste ) do (
   MD "%DISTCONTRIB%\%%P"
   copy "%BINDIR%\%%P\*.dll" "%DISTCONTRIB%\%%P"
-  copy "%BINDIR%\%%P\*.pdb" "%DISTCONTRIB%\%%P"
   if exist "%BINDIR%\%%P\README*.txt" (
     copy "%BINDIR%\%%P\README*.txt" "%DISTCONTRIB%\%%P"
   )
