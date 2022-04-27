@@ -76,7 +76,6 @@ namespace Poderosa.Forms {
             this._fontLabel = new System.Windows.Forms.Label();
             this._fontDescription = new System.Windows.Forms.Label();
             this._fontSelectButton = new System.Windows.Forms.Button();
-            this._fontSample = new Poderosa.Forms.ClearTypeAwareLabel();
             this._backgroundImageLabel = new System.Windows.Forms.Label();
             this._backgroundImageBox = new System.Windows.Forms.TextBox();
             this._backgroundImageSelectButton = new System.Windows.Forms.Button();
@@ -92,6 +91,7 @@ namespace Poderosa.Forms {
             this._caretColorBox = new Poderosa.UI.ColorButton();
             this._caretBlink = new System.Windows.Forms.CheckBox();
             this._caretColorLabel = new System.Windows.Forms.Label();
+            this._fontSample = new Poderosa.Forms.ClearTypeAwareLabel();
             this._colorFontGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._lineSpacingBox)).BeginInit();
             this._caretGroup.SuspendLayout();
@@ -99,6 +99,8 @@ namespace Poderosa.Forms {
             // 
             // _colorFontGroup
             // 
+            this._colorFontGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._colorFontGroup.Controls.Add(this._darkenEsColorForBackground);
             this._colorFontGroup.Controls.Add(this._bgColorLabel);
             this._colorFontGroup.Controls.Add(this._bgColorBox);
@@ -118,9 +120,9 @@ namespace Poderosa.Forms {
             this._colorFontGroup.Controls.Add(this._lineSpacingLabel);
             this._colorFontGroup.Controls.Add(this._pixelsLabel);
             this._colorFontGroup.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._colorFontGroup.Location = new System.Drawing.Point(9, 8);
+            this._colorFontGroup.Location = new System.Drawing.Point(3, 8);
             this._colorFontGroup.Name = "_colorFontGroup";
-            this._colorFontGroup.Size = new System.Drawing.Size(416, 206);
+            this._colorFontGroup.Size = new System.Drawing.Size(442, 206);
             this._colorFontGroup.TabIndex = 0;
             this._colorFontGroup.TabStop = false;
             // 
@@ -129,7 +131,7 @@ namespace Poderosa.Forms {
             this._darkenEsColorForBackground.AutoSize = true;
             this._darkenEsColorForBackground.Location = new System.Drawing.Point(143, 95);
             this._darkenEsColorForBackground.Name = "_darkenEsColorForBackground";
-            this._darkenEsColorForBackground.Size = new System.Drawing.Size(15, 14);
+            this._darkenEsColorForBackground.Size = new System.Drawing.Size(18, 17);
             this._darkenEsColorForBackground.TabIndex = 6;
             this._darkenEsColorForBackground.UseVisualStyleBackColor = true;
             // 
@@ -143,11 +145,13 @@ namespace Poderosa.Forms {
             // 
             // _bgColorBox
             // 
+            this._bgColorBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._bgColorBox.BackColor = System.Drawing.SystemColors.Control;
             this._bgColorBox.Location = new System.Drawing.Point(120, 16);
             this._bgColorBox.Name = "_bgColorBox";
             this._bgColorBox.SelectedColor = System.Drawing.Color.Empty;
-            this._bgColorBox.Size = new System.Drawing.Size(152, 20);
+            this._bgColorBox.Size = new System.Drawing.Size(178, 20);
             this._bgColorBox.TabIndex = 2;
             this._bgColorBox.UseVisualStyleBackColor = false;
             this._bgColorBox.ColorChanged += new Poderosa.UI.ColorButton.NewColorEventHandler(this.OnBGColorChanged);
@@ -162,21 +166,25 @@ namespace Poderosa.Forms {
             // 
             // _textColorBox
             // 
+            this._textColorBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._textColorBox.BackColor = System.Drawing.SystemColors.Control;
             this._textColorBox.Location = new System.Drawing.Point(120, 40);
             this._textColorBox.Name = "_textColorBox";
             this._textColorBox.SelectedColor = System.Drawing.Color.Empty;
-            this._textColorBox.Size = new System.Drawing.Size(152, 20);
+            this._textColorBox.Size = new System.Drawing.Size(178, 20);
             this._textColorBox.TabIndex = 4;
             this._textColorBox.UseVisualStyleBackColor = false;
             this._textColorBox.ColorChanged += new Poderosa.UI.ColorButton.NewColorEventHandler(this.OnTextColorChanged);
             // 
             // _editColorEscapeSequence
             // 
+            this._editColorEscapeSequence.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._editColorEscapeSequence.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this._editColorEscapeSequence.Location = new System.Drawing.Point(120, 66);
             this._editColorEscapeSequence.Name = "_editColorEscapeSequence";
-            this._editColorEscapeSequence.Size = new System.Drawing.Size(280, 24);
+            this._editColorEscapeSequence.Size = new System.Drawing.Size(306, 24);
             this._editColorEscapeSequence.TabIndex = 5;
             this._editColorEscapeSequence.Click += new System.EventHandler(this.OnEditColorEscapeSequence);
             // 
@@ -198,23 +206,13 @@ namespace Poderosa.Forms {
             // 
             // _fontSelectButton
             // 
+            this._fontSelectButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._fontSelectButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._fontSelectButton.Location = new System.Drawing.Point(340, 118);
+            this._fontSelectButton.Location = new System.Drawing.Point(338, 118);
             this._fontSelectButton.Name = "_fontSelectButton";
-            this._fontSelectButton.Size = new System.Drawing.Size(60, 23);
+            this._fontSelectButton.Size = new System.Drawing.Size(88, 23);
             this._fontSelectButton.TabIndex = 9;
             this._fontSelectButton.Click += new System.EventHandler(this.OnFontSelect);
-            // 
-            // _fontSample
-            // 
-            this._fontSample.BackColor = System.Drawing.Color.White;
-            this._fontSample.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this._fontSample.ClearType = false;
-            this._fontSample.Location = new System.Drawing.Point(280, 16);
-            this._fontSample.Name = "_fontSample";
-            this._fontSample.Size = new System.Drawing.Size(120, 46);
-            this._fontSample.TabIndex = 0;
-            this._fontSample.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // _backgroundImageLabel
             // 
@@ -228,7 +226,7 @@ namespace Poderosa.Forms {
             // 
             this._backgroundImageBox.Location = new System.Drawing.Point(120, 150);
             this._backgroundImageBox.Name = "_backgroundImageBox";
-            this._backgroundImageBox.Size = new System.Drawing.Size(260, 19);
+            this._backgroundImageBox.Size = new System.Drawing.Size(260, 22);
             this._backgroundImageBox.TabIndex = 11;
             // 
             // _backgroundImageSelectButton
@@ -254,7 +252,7 @@ namespace Poderosa.Forms {
             this._imageStyleBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._imageStyleBox.Location = new System.Drawing.Point(120, 174);
             this._imageStyleBox.Name = "_imageStyleBox";
-            this._imageStyleBox.Size = new System.Drawing.Size(100, 20);
+            this._imageStyleBox.Size = new System.Drawing.Size(100, 24);
             this._imageStyleBox.TabIndex = 14;
             // 
             // _lineSpacingBox
@@ -266,7 +264,7 @@ namespace Poderosa.Forms {
             0,
             0});
             this._lineSpacingBox.Name = "_lineSpacingBox";
-            this._lineSpacingBox.Size = new System.Drawing.Size(35, 19);
+            this._lineSpacingBox.Size = new System.Drawing.Size(35, 22);
             this._lineSpacingBox.TabIndex = 16;
             // 
             // _lineSpacingLabel
@@ -282,20 +280,22 @@ namespace Poderosa.Forms {
             this._pixelsLabel.AutoSize = true;
             this._pixelsLabel.Location = new System.Drawing.Point(373, 175);
             this._pixelsLabel.Name = "_pixelsLabel";
-            this._pixelsLabel.Size = new System.Drawing.Size(0, 12);
+            this._pixelsLabel.Size = new System.Drawing.Size(0, 17);
             this._pixelsLabel.TabIndex = 17;
             // 
             // _caretGroup
             // 
+            this._caretGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._caretGroup.Controls.Add(this._caretStyleLabel);
             this._caretGroup.Controls.Add(this._caretStyleBox);
             this._caretGroup.Controls.Add(this._caretSpecifyColor);
             this._caretGroup.Controls.Add(this._caretColorBox);
             this._caretGroup.Controls.Add(this._caretBlink);
             this._caretGroup.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._caretGroup.Location = new System.Drawing.Point(9, 220);
+            this._caretGroup.Location = new System.Drawing.Point(3, 220);
             this._caretGroup.Name = "_caretGroup";
-            this._caretGroup.Size = new System.Drawing.Size(416, 72);
+            this._caretGroup.Size = new System.Drawing.Size(442, 72);
             this._caretGroup.TabIndex = 16;
             this._caretGroup.TabStop = false;
             // 
@@ -312,7 +312,7 @@ namespace Poderosa.Forms {
             this._caretStyleBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._caretStyleBox.Location = new System.Drawing.Point(120, 16);
             this._caretStyleBox.Name = "_caretStyleBox";
-            this._caretStyleBox.Size = new System.Drawing.Size(152, 20);
+            this._caretStyleBox.Size = new System.Drawing.Size(152, 24);
             this._caretStyleBox.TabIndex = 1;
             // 
             // _caretSpecifyColor
@@ -349,6 +349,18 @@ namespace Poderosa.Forms {
             this._caretColorLabel.Name = "_caretColorLabel";
             this._caretColorLabel.Size = new System.Drawing.Size(100, 23);
             this._caretColorLabel.TabIndex = 0;
+            // 
+            // _fontSample
+            // 
+            this._fontSample.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this._fontSample.BackColor = System.Drawing.Color.White;
+            this._fontSample.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this._fontSample.ClearType = false;
+            this._fontSample.Location = new System.Drawing.Point(306, 16);
+            this._fontSample.Name = "_fontSample";
+            this._fontSample.Size = new System.Drawing.Size(120, 46);
+            this._fontSample.TabIndex = 0;
+            this._fontSample.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DisplayOptionPanel
             // 

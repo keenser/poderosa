@@ -50,9 +50,9 @@ namespace Poderosa.Forms {
         }
         private void InitializeComponent() {
             this._keyConfigList = new System.Windows.Forms.ListView();
-            this._commandCategoryHeader = new System.Windows.Forms.ColumnHeader();
-            this._commandNameHeader = new System.Windows.Forms.ColumnHeader();
-            this._commandConfigHeader = new System.Windows.Forms.ColumnHeader();
+            this._commandCategoryHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._commandNameHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this._commandConfigHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this._resetKeyConfigButton = new System.Windows.Forms.Button();
             this._clearKeyConfigButton = new System.Windows.Forms.Button();
             this._commandConfigGroup = new System.Windows.Forms.GroupBox();
@@ -63,28 +63,27 @@ namespace Poderosa.Forms {
             this._hotKey = new Poderosa.UI.HotKey();
             this._newAllocationLabel = new System.Windows.Forms.Label();
             this._allocateKeyButton = new System.Windows.Forms.Button();
-
             this._commandConfigGroup.SuspendLayout();
-
-            this.Controls.AddRange(new System.Windows.Forms.Control[] {
-                this._keyConfigList,
-                this._resetKeyConfigButton,
-                this._clearKeyConfigButton,
-                this._commandConfigGroup});
+            this.SuspendLayout();
             // 
             // _keyConfigList
             // 
+            this._keyConfigList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._keyConfigList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-                this._commandCategoryHeader,
-                this._commandNameHeader,
-                this._commandConfigHeader});
+            this._commandCategoryHeader,
+            this._commandNameHeader,
+            this._commandConfigHeader});
             this._keyConfigList.FullRowSelect = true;
             this._keyConfigList.GridLines = true;
             this._keyConfigList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this._keyConfigList.HideSelection = false;
+            this._keyConfigList.Location = new System.Drawing.Point(0, 0);
             this._keyConfigList.MultiSelect = false;
             this._keyConfigList.Name = "_keyConfigList";
             this._keyConfigList.Size = new System.Drawing.Size(432, 172);
             this._keyConfigList.TabIndex = 0;
+            this._keyConfigList.UseCompatibleStateImageBehavior = false;
             this._keyConfigList.View = System.Windows.Forms.View.Details;
             this._keyConfigList.SelectedIndexChanged += new System.EventHandler(this.OnKeyMapItemActivated);
             // 
@@ -102,35 +101,34 @@ namespace Poderosa.Forms {
             // 
             // _resetKeyConfigButton
             // 
+            this._resetKeyConfigButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this._resetKeyConfigButton.Location = new System.Drawing.Point(216, 172);
             this._resetKeyConfigButton.Name = "_resetKeyConfigButton";
-            this._resetKeyConfigButton.FlatStyle = FlatStyle.System;
             this._resetKeyConfigButton.Size = new System.Drawing.Size(104, 23);
             this._resetKeyConfigButton.TabIndex = 1;
             this._resetKeyConfigButton.Click += new System.EventHandler(this.OnResetKeyConfig);
             // 
             // _clearKeyConfigButton
             // 
+            this._clearKeyConfigButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this._clearKeyConfigButton.Location = new System.Drawing.Point(336, 172);
             this._clearKeyConfigButton.Name = "_clearKeyConfigButton";
-            this._clearKeyConfigButton.FlatStyle = FlatStyle.System;
             this._clearKeyConfigButton.Size = new System.Drawing.Size(88, 23);
             this._clearKeyConfigButton.TabIndex = 2;
             this._clearKeyConfigButton.Click += new System.EventHandler(this.OnClearKeyConfig);
             // 
             // _commandConfigGroup
             // 
-            this._commandConfigGroup.Controls.AddRange(new System.Windows.Forms.Control[] {
-                this._commandNameLabel,
-                this._commandName,
-                this._currentConfigLabel,
-                this._currentCommand,
-                this._hotKey,
-                this._newAllocationLabel,
-                this._allocateKeyButton});
+            this._commandConfigGroup.Controls.Add(this._commandNameLabel);
+            this._commandConfigGroup.Controls.Add(this._commandName);
+            this._commandConfigGroup.Controls.Add(this._currentConfigLabel);
+            this._commandConfigGroup.Controls.Add(this._currentCommand);
+            this._commandConfigGroup.Controls.Add(this._hotKey);
+            this._commandConfigGroup.Controls.Add(this._newAllocationLabel);
+            this._commandConfigGroup.Controls.Add(this._allocateKeyButton);
+            this._commandConfigGroup.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this._commandConfigGroup.Location = new System.Drawing.Point(8, 196);
             this._commandConfigGroup.Name = "_commandConfigGroup";
-            this._commandConfigGroup.FlatStyle = FlatStyle.System;
             this._commandConfigGroup.Size = new System.Drawing.Size(416, 96);
             this._commandConfigGroup.TabIndex = 3;
             this._commandConfigGroup.TabStop = false;
@@ -174,9 +172,8 @@ namespace Poderosa.Forms {
             this._hotKey.Key = System.Windows.Forms.Keys.None;
             this._hotKey.Location = new System.Drawing.Point(112, 64);
             this._hotKey.Name = "_hotKey";
-            this._hotKey.Size = new System.Drawing.Size(168, 19);
+            this._hotKey.Size = new System.Drawing.Size(168, 22);
             this._hotKey.TabIndex = 8;
-            this._hotKey.Text = "";
             // 
             // _newAllocationLabel
             // 
@@ -189,15 +186,25 @@ namespace Poderosa.Forms {
             // _allocateKeyButton
             // 
             this._allocateKeyButton.Enabled = false;
+            this._allocateKeyButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this._allocateKeyButton.Location = new System.Drawing.Point(288, 64);
             this._allocateKeyButton.Name = "_allocateKeyButton";
-            this._allocateKeyButton.FlatStyle = FlatStyle.System;
             this._allocateKeyButton.Size = new System.Drawing.Size(75, 24);
             this._allocateKeyButton.TabIndex = 10;
             this._allocateKeyButton.Click += new System.EventHandler(this.OnAllocateKey);
+            // 
+            // CommandOptionPanel
+            // 
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.Controls.Add(this._keyConfigList);
+            this.Controls.Add(this._resetKeyConfigButton);
+            this.Controls.Add(this._clearKeyConfigButton);
+            this.Controls.Add(this._commandConfigGroup);
+            this.Name = "CommandOptionPanel";
+            this._commandConfigGroup.ResumeLayout(false);
+            this._commandConfigGroup.PerformLayout();
+            this.ResumeLayout(false);
 
-            this.BackColor = SystemColors.Window;
-            this._commandConfigGroup.ResumeLayout();
         }
         private void FillText() {
             StringResource sr = OptionDialogPlugin.Instance.Strings;

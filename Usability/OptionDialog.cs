@@ -125,7 +125,7 @@ namespace Poderosa.Forms {
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(OptionDialog));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OptionDialog));
             this._imageList = new System.Windows.Forms.ImageList(this.components);
             this._categoryItems = new System.Windows.Forms.Panel();
             this._okButton = new System.Windows.Forms.Button();
@@ -134,46 +134,55 @@ namespace Poderosa.Forms {
             // 
             // _imageList
             // 
-            this._imageList.ImageSize = new System.Drawing.Size(32, 32);
             this._imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("_imageList.ImageStream")));
             this._imageList.TransparentColor = System.Drawing.Color.Teal;
+            this._imageList.Images.SetKeyName(0, "");
+            this._imageList.Images.SetKeyName(1, "");
+            this._imageList.Images.SetKeyName(2, "");
+            this._imageList.Images.SetKeyName(3, "");
+            this._imageList.Images.SetKeyName(4, "");
+            this._imageList.Images.SetKeyName(5, "");
+            this._imageList.Images.SetKeyName(6, "");
             // 
             // _categoryItems
             // 
-            this._categoryItems.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom;
+            this._categoryItems.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this._categoryItems.BackColor = System.Drawing.SystemColors.Window;
             this._categoryItems.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this._categoryItems.Location = new System.Drawing.Point(4, 0);
+            this._categoryItems.Location = new System.Drawing.Point(5, 0);
             this._categoryItems.Name = "_categoryItems";
-            this._categoryItems.Size = new System.Drawing.Size(72, 376);
+            this._categoryItems.Size = new System.Drawing.Size(86, 471);
             this._categoryItems.TabIndex = 3;
             this._categoryItems.MouseLeave += new System.EventHandler(this.CategoryItemsMouseLeave);
             // 
             // _okButton
             // 
-            this._okButton.Anchor = AnchorStyles.Right | AnchorStyles.Bottom;
+            this._okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this._okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this._okButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._okButton.Location = new System.Drawing.Point(336, 384);
+            this._okButton.Location = new System.Drawing.Point(535, 481);
             this._okButton.Name = "_okButton";
+            this._okButton.Size = new System.Drawing.Size(90, 29);
             this._okButton.TabIndex = 1;
             this._okButton.Click += new System.EventHandler(this.OnOK);
             // 
             // _cancelButton
             // 
-            this._cancelButton.Anchor = AnchorStyles.Right | AnchorStyles.Bottom;
+            this._cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this._cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this._cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._cancelButton.Location = new System.Drawing.Point(432, 384);
+            this._cancelButton.Location = new System.Drawing.Point(650, 481);
             this._cancelButton.Name = "_cancelButton";
+            this._cancelButton.Size = new System.Drawing.Size(90, 29);
             this._cancelButton.TabIndex = 2;
             // 
             // OptionDialog
             // 
             this.AcceptButton = this._okButton;
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 12);
+            this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
             this.CancelButton = this._cancelButton;
-            this.ClientSize = new System.Drawing.Size(528, 414);
+            this.ClientSize = new System.Drawing.Size(766, 519);
             this.Controls.Add(this._cancelButton);
             this.Controls.Add(this._okButton);
             this.Controls.Add(this._categoryItems);

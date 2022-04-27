@@ -103,10 +103,12 @@ namespace Poderosa.Forms {
             // 
             // _charDecodeErrorBehaviorBox
             // 
+            this._charDecodeErrorBehaviorBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._charDecodeErrorBehaviorBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this._charDecodeErrorBehaviorBox.Location = new System.Drawing.Point(232, 8);
+            this._charDecodeErrorBehaviorBox.Location = new System.Drawing.Point(271, 8);
             this._charDecodeErrorBehaviorBox.Name = "_charDecodeErrorBehaviorBox";
-            this._charDecodeErrorBehaviorBox.Size = new System.Drawing.Size(152, 20);
+            this._charDecodeErrorBehaviorBox.Size = new System.Drawing.Size(152, 24);
             this._charDecodeErrorBehaviorBox.TabIndex = 1;
             // 
             // _bufferSizeLabel
@@ -119,10 +121,10 @@ namespace Poderosa.Forms {
             // 
             // _bufferSize
             // 
-            this._bufferSize.Location = new System.Drawing.Point(232, 32);
+            this._bufferSize.Location = new System.Drawing.Point(271, 32);
             this._bufferSize.MaxLength = 5;
             this._bufferSize.Name = "_bufferSize";
-            this._bufferSize.Size = new System.Drawing.Size(72, 19);
+            this._bufferSize.Size = new System.Drawing.Size(152, 22);
             this._bufferSize.TabIndex = 3;
             // 
             // _additionalWordElementLabel
@@ -135,9 +137,9 @@ namespace Poderosa.Forms {
             // 
             // _additionalWordElementBox
             // 
-            this._additionalWordElementBox.Location = new System.Drawing.Point(232, 56);
+            this._additionalWordElementBox.Location = new System.Drawing.Point(271, 56);
             this._additionalWordElementBox.Name = "_additionalWordElementBox";
-            this._additionalWordElementBox.Size = new System.Drawing.Size(144, 19);
+            this._additionalWordElementBox.Size = new System.Drawing.Size(152, 22);
             this._additionalWordElementBox.TabIndex = 5;
             // 
             // _disconnectNotificationLabel
@@ -151,9 +153,9 @@ namespace Poderosa.Forms {
             // _disconnectNotification
             // 
             this._disconnectNotification.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this._disconnectNotification.Location = new System.Drawing.Point(232, 80);
+            this._disconnectNotification.Location = new System.Drawing.Point(271, 80);
             this._disconnectNotification.Name = "_disconnectNotification";
-            this._disconnectNotification.Size = new System.Drawing.Size(152, 20);
+            this._disconnectNotification.Size = new System.Drawing.Size(152, 24);
             this._disconnectNotification.TabIndex = 7;
             // 
             // _closeOnDisconnect
@@ -191,10 +193,10 @@ namespace Poderosa.Forms {
             // 
             // _keepAliveIntervalBox
             // 
-            this._keepAliveIntervalBox.Location = new System.Drawing.Point(276, 176);
+            this._keepAliveIntervalBox.Location = new System.Drawing.Point(383, 176);
             this._keepAliveIntervalBox.MaxLength = 2;
             this._keepAliveIntervalBox.Name = "_keepAliveIntervalBox";
-            this._keepAliveIntervalBox.Size = new System.Drawing.Size(40, 19);
+            this._keepAliveIntervalBox.Size = new System.Drawing.Size(40, 22);
             this._keepAliveIntervalBox.TabIndex = 13;
             this._keepAliveIntervalBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -208,15 +210,17 @@ namespace Poderosa.Forms {
             // 
             // _defaultLogGroup
             // 
+            this._defaultLogGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._defaultLogGroup.Controls.Add(this._defaultLogTypeLabel);
             this._defaultLogGroup.Controls.Add(this._defaultLogTypeBox);
             this._defaultLogGroup.Controls.Add(this._defaultLogDirectoryLabel);
             this._defaultLogGroup.Controls.Add(this._defaultLogDirectory);
             this._defaultLogGroup.Controls.Add(this._dirSelect);
             this._defaultLogGroup.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._defaultLogGroup.Location = new System.Drawing.Point(16, 204);
+            this._defaultLogGroup.Location = new System.Drawing.Point(3, 204);
             this._defaultLogGroup.Name = "_defaultLogGroup";
-            this._defaultLogGroup.Size = new System.Drawing.Size(392, 76);
+            this._defaultLogGroup.Size = new System.Drawing.Size(420, 76);
             this._defaultLogGroup.TabIndex = 16;
             this._defaultLogGroup.TabStop = false;
             // 
@@ -233,7 +237,7 @@ namespace Poderosa.Forms {
             this._defaultLogTypeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._defaultLogTypeBox.Location = new System.Drawing.Point(128, 20);
             this._defaultLogTypeBox.Name = "_defaultLogTypeBox";
-            this._defaultLogTypeBox.Size = new System.Drawing.Size(176, 20);
+            this._defaultLogTypeBox.Size = new System.Drawing.Size(176, 24);
             this._defaultLogTypeBox.TabIndex = 17;
             // 
             // _defaultLogDirectoryLabel
@@ -248,7 +252,7 @@ namespace Poderosa.Forms {
             // 
             this._defaultLogDirectory.Location = new System.Drawing.Point(128, 48);
             this._defaultLogDirectory.Name = "_defaultLogDirectory";
-            this._defaultLogDirectory.Size = new System.Drawing.Size(176, 19);
+            this._defaultLogDirectory.Size = new System.Drawing.Size(176, 22);
             this._defaultLogDirectory.TabIndex = 19;
             // 
             // _dirSelect
@@ -274,47 +278,57 @@ namespace Poderosa.Forms {
             // 
             // _shellSupportGroup
             // 
+            this._shellSupportGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._shellSupportGroup.Controls.Add(this._enableComplementForNewConnections);
             this._shellSupportGroup.Controls.Add(this._commandPopupAlwaysOnTop);
             this._shellSupportGroup.Controls.Add(this._commandPopupInTaskBar);
             this._shellSupportGroup.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._shellSupportGroup.Location = new System.Drawing.Point(16, 284);
+            this._shellSupportGroup.Location = new System.Drawing.Point(3, 284);
             this._shellSupportGroup.Name = "_shellSupportGroup";
-            this._shellSupportGroup.Size = new System.Drawing.Size(392, 86);
+            this._shellSupportGroup.Size = new System.Drawing.Size(420, 96);
             this._shellSupportGroup.TabIndex = 17;
             this._shellSupportGroup.TabStop = false;
             // 
             // _enableComplementForNewConnections
             // 
+            this._enableComplementForNewConnections.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._enableComplementForNewConnections.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._enableComplementForNewConnections.Location = new System.Drawing.Point(8, 12);
+            this._enableComplementForNewConnections.Location = new System.Drawing.Point(8, 21);
             this._enableComplementForNewConnections.Name = "_enableComplementForNewConnections";
-            this._enableComplementForNewConnections.Size = new System.Drawing.Size(375, 24);
+            this._enableComplementForNewConnections.Size = new System.Drawing.Size(406, 24);
             this._enableComplementForNewConnections.TabIndex = 21;
             // 
             // _commandPopupAlwaysOnTop
             // 
+            this._commandPopupAlwaysOnTop.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._commandPopupAlwaysOnTop.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._commandPopupAlwaysOnTop.Location = new System.Drawing.Point(8, 34);
+            this._commandPopupAlwaysOnTop.Location = new System.Drawing.Point(8, 43);
             this._commandPopupAlwaysOnTop.Name = "_commandPopupAlwaysOnTop";
-            this._commandPopupAlwaysOnTop.Size = new System.Drawing.Size(375, 24);
+            this._commandPopupAlwaysOnTop.Size = new System.Drawing.Size(406, 24);
             this._commandPopupAlwaysOnTop.TabIndex = 22;
             // 
             // _commandPopupInTaskBar
             // 
+            this._commandPopupInTaskBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._commandPopupInTaskBar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._commandPopupInTaskBar.Location = new System.Drawing.Point(8, 56);
+            this._commandPopupInTaskBar.Location = new System.Drawing.Point(8, 65);
             this._commandPopupInTaskBar.Name = "_commandPopupInTaskBar";
-            this._commandPopupInTaskBar.Size = new System.Drawing.Size(375, 24);
+            this._commandPopupInTaskBar.Size = new System.Drawing.Size(406, 24);
             this._commandPopupInTaskBar.TabIndex = 23;
             // 
             // _copyAndPasteGroup
             // 
+            this._copyAndPasteGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._copyAndPasteGroup.Controls.Add(this._alertOnPasteNewLineCharCheck);
             this._copyAndPasteGroup.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._copyAndPasteGroup.Location = new System.Drawing.Point(16, 374);
+            this._copyAndPasteGroup.Location = new System.Drawing.Point(3, 386);
             this._copyAndPasteGroup.Name = "_copyAndPasteGroup";
-            this._copyAndPasteGroup.Size = new System.Drawing.Size(392, 42);
+            this._copyAndPasteGroup.Size = new System.Drawing.Size(420, 42);
             this._copyAndPasteGroup.TabIndex = 18;
             this._copyAndPasteGroup.TabStop = false;
             // 
@@ -349,7 +363,7 @@ namespace Poderosa.Forms {
             this.Controls.Add(this._defaultLogGroup);
             this.Controls.Add(this._shellSupportGroup);
             this.Name = "TerminalOptionPanel";
-            this.Size = new System.Drawing.Size(426, 423);
+            this.Size = new System.Drawing.Size(426, 433);
             this._defaultLogGroup.ResumeLayout(false);
             this._defaultLogGroup.PerformLayout();
             this._shellSupportGroup.ResumeLayout(false);

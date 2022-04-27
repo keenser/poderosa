@@ -69,28 +69,33 @@ namespace Poderosa.Forms {
             // 
             // _cipherOrderGroup
             // 
+            this._cipherOrderGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._cipherOrderGroup.Controls.Add(this._cipherOrderList);
             this._cipherOrderGroup.Controls.Add(this._algorithmOrderUp);
             this._cipherOrderGroup.Controls.Add(this._algorithmOrderDown);
             this._cipherOrderGroup.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._cipherOrderGroup.Location = new System.Drawing.Point(8, 8);
+            this._cipherOrderGroup.Location = new System.Drawing.Point(3, 8);
             this._cipherOrderGroup.Name = "_cipherOrderGroup";
-            this._cipherOrderGroup.Size = new System.Drawing.Size(416, 80);
+            this._cipherOrderGroup.Size = new System.Drawing.Size(426, 80);
             this._cipherOrderGroup.TabIndex = 0;
             this._cipherOrderGroup.TabStop = false;
             // 
             // _cipherOrderList
             // 
-            this._cipherOrderList.ItemHeight = 12;
+            this._cipherOrderList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._cipherOrderList.ItemHeight = 16;
             this._cipherOrderList.Location = new System.Drawing.Point(8, 16);
             this._cipherOrderList.Name = "_cipherOrderList";
-            this._cipherOrderList.Size = new System.Drawing.Size(208, 52);
+            this._cipherOrderList.Size = new System.Drawing.Size(331, 52);
             this._cipherOrderList.TabIndex = 1;
             // 
             // _algorithmOrderUp
             // 
+            this._algorithmOrderUp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._algorithmOrderUp.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._algorithmOrderUp.Location = new System.Drawing.Point(232, 16);
+            this._algorithmOrderUp.Location = new System.Drawing.Point(345, 16);
             this._algorithmOrderUp.Name = "_algorithmOrderUp";
             this._algorithmOrderUp.Size = new System.Drawing.Size(75, 23);
             this._algorithmOrderUp.TabIndex = 2;
@@ -98,8 +103,9 @@ namespace Poderosa.Forms {
             // 
             // _algorithmOrderDown
             // 
+            this._algorithmOrderDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._algorithmOrderDown.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._algorithmOrderDown.Location = new System.Drawing.Point(232, 48);
+            this._algorithmOrderDown.Location = new System.Drawing.Point(345, 45);
             this._algorithmOrderDown.Name = "_algorithmOrderDown";
             this._algorithmOrderDown.Size = new System.Drawing.Size(75, 23);
             this._algorithmOrderDown.TabIndex = 3;
@@ -107,6 +113,8 @@ namespace Poderosa.Forms {
             // 
             // _ssh2OptionGroup
             // 
+            this._ssh2OptionGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._ssh2OptionGroup.Controls.Add(this._hostKeyAlgorithmOrderList);
             this._ssh2OptionGroup.Controls.Add(this._hostKeyAlgorithmOrderUp);
             this._ssh2OptionGroup.Controls.Add(this._hostKeyAlgorithmOrderDown);
@@ -114,24 +122,27 @@ namespace Poderosa.Forms {
             this._ssh2OptionGroup.Controls.Add(this._windowSizeLabel);
             this._ssh2OptionGroup.Controls.Add(this._windowSizeBox);
             this._ssh2OptionGroup.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._ssh2OptionGroup.Location = new System.Drawing.Point(8, 96);
+            this._ssh2OptionGroup.Location = new System.Drawing.Point(3, 96);
             this._ssh2OptionGroup.Name = "_ssh2OptionGroup";
-            this._ssh2OptionGroup.Size = new System.Drawing.Size(416, 139);
+            this._ssh2OptionGroup.Size = new System.Drawing.Size(426, 139);
             this._ssh2OptionGroup.TabIndex = 4;
             this._ssh2OptionGroup.TabStop = false;
             // 
             // _hostKeyAlgorithmOrderList
             // 
-            this._hostKeyAlgorithmOrderList.ItemHeight = 12;
+            this._hostKeyAlgorithmOrderList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._hostKeyAlgorithmOrderList.ItemHeight = 16;
             this._hostKeyAlgorithmOrderList.Location = new System.Drawing.Point(8, 40);
             this._hostKeyAlgorithmOrderList.Name = "_hostKeyAlgorithmOrderList";
-            this._hostKeyAlgorithmOrderList.Size = new System.Drawing.Size(208, 52);
+            this._hostKeyAlgorithmOrderList.Size = new System.Drawing.Size(331, 52);
             this._hostKeyAlgorithmOrderList.TabIndex = 2;
             // 
             // _hostKeyAlgorithmOrderUp
             // 
+            this._hostKeyAlgorithmOrderUp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._hostKeyAlgorithmOrderUp.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._hostKeyAlgorithmOrderUp.Location = new System.Drawing.Point(232, 40);
+            this._hostKeyAlgorithmOrderUp.Location = new System.Drawing.Point(345, 40);
             this._hostKeyAlgorithmOrderUp.Name = "_hostKeyAlgorithmOrderUp";
             this._hostKeyAlgorithmOrderUp.Size = new System.Drawing.Size(75, 23);
             this._hostKeyAlgorithmOrderUp.TabIndex = 3;
@@ -139,8 +150,9 @@ namespace Poderosa.Forms {
             // 
             // _hostKeyAlgorithmOrderDown
             // 
+            this._hostKeyAlgorithmOrderDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._hostKeyAlgorithmOrderDown.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._hostKeyAlgorithmOrderDown.Location = new System.Drawing.Point(232, 72);
+            this._hostKeyAlgorithmOrderDown.Location = new System.Drawing.Point(345, 69);
             this._hostKeyAlgorithmOrderDown.Name = "_hostKeyAlgorithmOrderDown";
             this._hostKeyAlgorithmOrderDown.Size = new System.Drawing.Size(75, 23);
             this._hostKeyAlgorithmOrderDown.TabIndex = 4;
@@ -164,38 +176,45 @@ namespace Poderosa.Forms {
             // 
             // _windowSizeBox
             // 
-            this._windowSizeBox.Location = new System.Drawing.Point(206, 110);
+            this._windowSizeBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this._windowSizeBox.Location = new System.Drawing.Point(300, 110);
             this._windowSizeBox.MaxLength = 10;
             this._windowSizeBox.Name = "_windowSizeBox";
-            this._windowSizeBox.Size = new System.Drawing.Size(120, 19);
+            this._windowSizeBox.Size = new System.Drawing.Size(120, 22);
             this._windowSizeBox.TabIndex = 8;
             this._windowSizeBox.Text = "0";
             // 
             // _sshMiscGroup
             // 
+            this._sshMiscGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._sshMiscGroup.Controls.Add(this._sshCheckMAC);
             this._sshMiscGroup.Controls.Add(this._sshEventLog);
             this._sshMiscGroup.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._sshMiscGroup.Location = new System.Drawing.Point(8, 243);
+            this._sshMiscGroup.Location = new System.Drawing.Point(3, 243);
             this._sshMiscGroup.Name = "_sshMiscGroup";
-            this._sshMiscGroup.Size = new System.Drawing.Size(416, 83);
+            this._sshMiscGroup.Size = new System.Drawing.Size(426, 83);
             this._sshMiscGroup.TabIndex = 9;
             this._sshMiscGroup.TabStop = false;
             // 
             // _sshCheckMAC
             // 
+            this._sshCheckMAC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._sshCheckMAC.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._sshCheckMAC.Location = new System.Drawing.Point(8, 12);
+            this._sshCheckMAC.Location = new System.Drawing.Point(6, 21);
             this._sshCheckMAC.Name = "_sshCheckMAC";
-            this._sshCheckMAC.Size = new System.Drawing.Size(400, 37);
+            this._sshCheckMAC.Size = new System.Drawing.Size(414, 37);
             this._sshCheckMAC.TabIndex = 12;
             // 
             // _sshEventLog
             // 
+            this._sshEventLog.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._sshEventLog.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._sshEventLog.Location = new System.Drawing.Point(8, 48);
+            this._sshEventLog.Location = new System.Drawing.Point(6, 58);
             this._sshEventLog.Name = "_sshEventLog";
-            this._sshEventLog.Size = new System.Drawing.Size(400, 23);
+            this._sshEventLog.Size = new System.Drawing.Size(414, 23);
             this._sshEventLog.TabIndex = 13;
             // 
             // SSHOptionPanel
@@ -205,12 +224,13 @@ namespace Poderosa.Forms {
             this.Controls.Add(this._ssh2OptionGroup);
             this.Controls.Add(this._sshMiscGroup);
             this.Name = "SSHOptionPanel";
-            this.Size = new System.Drawing.Size(381, 350);
+            this.Size = new System.Drawing.Size(432, 335);
             this._cipherOrderGroup.ResumeLayout(false);
             this._ssh2OptionGroup.ResumeLayout(false);
             this._ssh2OptionGroup.PerformLayout();
             this._sshMiscGroup.ResumeLayout(false);
             this.ResumeLayout(false);
+
         }
 
         /// <summary>

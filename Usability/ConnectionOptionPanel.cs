@@ -49,173 +49,173 @@ namespace Poderosa.Forms {
         }
         private void InitializeComponent() {
             this._socksGroup = new System.Windows.Forms.GroupBox();
-            this._useSocks = new CheckBox();
             this._socksServerLabel = new System.Windows.Forms.Label();
-            this._socksServerBox = new TextBox();
+            this._socksServerBox = new System.Windows.Forms.TextBox();
             this._socksPortLabel = new System.Windows.Forms.Label();
-            this._socksPortBox = new TextBox();
+            this._socksPortBox = new System.Windows.Forms.TextBox();
             this._socksAccountLabel = new System.Windows.Forms.Label();
-            this._socksAccountBox = new TextBox();
+            this._socksAccountBox = new System.Windows.Forms.TextBox();
             this._socksPasswordLabel = new System.Windows.Forms.Label();
-            this._socksPasswordBox = new TextBox();
+            this._socksPasswordBox = new System.Windows.Forms.TextBox();
             this._socksNANetworksLabel = new System.Windows.Forms.Label();
-            this._socksNANetworksBox = new TextBox();
-
-            _IPv6Group = new GroupBox();
-            _IPv6PriorityLabel = new Label();
-            _IPv6PriorityBox = new ComboBox();
-
+            this._socksNANetworksBox = new System.Windows.Forms.TextBox();
+            this._useSocks = new System.Windows.Forms.CheckBox();
+            this._IPv6Group = new System.Windows.Forms.GroupBox();
+            this._IPv6PriorityLabel = new System.Windows.Forms.Label();
+            this._IPv6PriorityBox = new System.Windows.Forms.ComboBox();
             this._socksGroup.SuspendLayout();
-            _IPv6Group.SuspendLayout();
-
-            this.Controls.AddRange(new System.Windows.Forms.Control[] {
-                this._useSocks,
-                this._socksGroup,
-                this._IPv6Group});
-            //
-            //_useSocks
-            //
-            this._useSocks.Location = new System.Drawing.Point(16, 3);
-            this._useSocks.Name = "_useSocksAuthentication";
-            this._useSocks.FlatStyle = FlatStyle.System;
-            this._useSocks.Size = new System.Drawing.Size(160, 23);
-            this._useSocks.TabIndex = 1;
-            this._useSocks.CheckedChanged += new EventHandler(OnUseSocksOptionChanged);
-            //
-            //_socksGroup
-            //
-            this._socksGroup.Controls.AddRange(new System.Windows.Forms.Control[] {
-                this._socksServerLabel,
-                this._socksServerBox,
-                this._socksPortLabel,
-                this._socksPortBox,
-                this._socksAccountLabel,
-                this._socksAccountBox,
-                this._socksPasswordLabel,
-                this._socksPasswordBox,
-                this._socksNANetworksLabel,
-                this._socksNANetworksBox});
+            this._IPv6Group.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // _socksGroup
+            // 
+            this._socksGroup.Controls.Add(this._socksServerLabel);
+            this._socksGroup.Controls.Add(this._socksServerBox);
+            this._socksGroup.Controls.Add(this._socksPortLabel);
+            this._socksGroup.Controls.Add(this._socksPortBox);
+            this._socksGroup.Controls.Add(this._socksAccountLabel);
+            this._socksGroup.Controls.Add(this._socksAccountBox);
+            this._socksGroup.Controls.Add(this._socksPasswordLabel);
+            this._socksGroup.Controls.Add(this._socksPasswordBox);
+            this._socksGroup.Controls.Add(this._socksNANetworksLabel);
+            this._socksGroup.Controls.Add(this._socksNANetworksBox);
+            this._socksGroup.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this._socksGroup.Location = new System.Drawing.Point(8, 8);
             this._socksGroup.Name = "_socksGroup";
-            this._socksGroup.FlatStyle = FlatStyle.System;
             this._socksGroup.Size = new System.Drawing.Size(416, 128);
             this._socksGroup.TabIndex = 2;
             this._socksGroup.TabStop = false;
-            this._socksGroup.Text = "";
-            //
-            //_socksServerLabel
-            //
+            // 
+            // _socksServerLabel
+            // 
             this._socksServerLabel.Location = new System.Drawing.Point(8, 18);
             this._socksServerLabel.Name = "_socksServerLabel";
             this._socksServerLabel.Size = new System.Drawing.Size(80, 23);
             this._socksServerLabel.TabIndex = 0;
             this._socksServerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            //
-            //_socksServerBox
-            //
+            // 
+            // _socksServerBox
+            // 
+            this._socksServerBox.Enabled = false;
             this._socksServerBox.Location = new System.Drawing.Point(96, 18);
             this._socksServerBox.Name = "_socksServerBox";
-            this._socksServerBox.Size = new System.Drawing.Size(104, 19);
-            this._socksServerBox.Enabled = false;
+            this._socksServerBox.Size = new System.Drawing.Size(104, 22);
             this._socksServerBox.TabIndex = 1;
-            //
-            //_socksPortLabel
-            //
+            // 
+            // _socksPortLabel
+            // 
             this._socksPortLabel.Location = new System.Drawing.Point(216, 18);
             this._socksPortLabel.Name = "_socksPortLabel";
             this._socksPortLabel.Size = new System.Drawing.Size(80, 23);
             this._socksPortLabel.TabIndex = 2;
             this._socksPortLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            //
-            //_socksPortBox
-            //
-            this._socksPortBox.Location = new System.Drawing.Point(304, 18);
-            this._socksPortBox.Name = "_socksPortBox";
-            this._socksPortBox.Size = new System.Drawing.Size(104, 19);
+            // 
+            // _socksPortBox
+            // 
             this._socksPortBox.Enabled = false;
-            this._socksPortBox.TabIndex = 3;
+            this._socksPortBox.Location = new System.Drawing.Point(304, 18);
             this._socksPortBox.MaxLength = 5;
-            //
-            //_socksAccountLabel
-            //
+            this._socksPortBox.Name = "_socksPortBox";
+            this._socksPortBox.Size = new System.Drawing.Size(104, 22);
+            this._socksPortBox.TabIndex = 3;
+            // 
+            // _socksAccountLabel
+            // 
             this._socksAccountLabel.Location = new System.Drawing.Point(8, 40);
             this._socksAccountLabel.Name = "_socksAccountLabel";
             this._socksAccountLabel.Size = new System.Drawing.Size(80, 23);
             this._socksAccountLabel.TabIndex = 4;
             this._socksAccountLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            //
-            //_socksAccountBox
-            //
+            // 
+            // _socksAccountBox
+            // 
+            this._socksAccountBox.Enabled = false;
             this._socksAccountBox.Location = new System.Drawing.Point(96, 40);
             this._socksAccountBox.Name = "_socksAccountBox";
-            this._socksAccountBox.Size = new System.Drawing.Size(104, 19);
-            this._socksAccountBox.Enabled = false;
+            this._socksAccountBox.Size = new System.Drawing.Size(104, 22);
             this._socksAccountBox.TabIndex = 5;
-            //
-            //_socksPasswordLabel
-            //
+            // 
+            // _socksPasswordLabel
+            // 
             this._socksPasswordLabel.Location = new System.Drawing.Point(216, 40);
             this._socksPasswordLabel.Name = "_socksPasswordLabel";
             this._socksPasswordLabel.Size = new System.Drawing.Size(80, 23);
             this._socksPasswordLabel.TabIndex = 6;
             this._socksPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            //
-            //_socksPasswordBox
-            //
+            // 
+            // _socksPasswordBox
+            // 
+            this._socksPasswordBox.Enabled = false;
             this._socksPasswordBox.Location = new System.Drawing.Point(304, 40);
             this._socksPasswordBox.Name = "_socksPasswordBox";
             this._socksPasswordBox.PasswordChar = '*';
-            this._socksPasswordBox.Enabled = false;
-            this._socksPasswordBox.Size = new System.Drawing.Size(104, 19);
+            this._socksPasswordBox.Size = new System.Drawing.Size(104, 22);
             this._socksPasswordBox.TabIndex = 7;
-            //
-            //_socksNANetworksLabel
-            //
+            // 
+            // _socksNANetworksLabel
+            // 
             this._socksNANetworksLabel.Location = new System.Drawing.Point(8, 68);
             this._socksNANetworksLabel.Name = "_socksNANetworksLabel";
             this._socksNANetworksLabel.Size = new System.Drawing.Size(400, 28);
             this._socksNANetworksLabel.TabIndex = 8;
             this._socksNANetworksLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            //
-            //_socksNANetworksBox
-            //
+            // 
+            // _socksNANetworksBox
+            // 
+            this._socksNANetworksBox.Enabled = false;
             this._socksNANetworksBox.Location = new System.Drawing.Point(8, 98);
             this._socksNANetworksBox.Name = "_socksNANetworksBox";
-            this._socksNANetworksBox.Enabled = false;
-            this._socksNANetworksBox.Size = new System.Drawing.Size(400, 19);
+            this._socksNANetworksBox.Size = new System.Drawing.Size(400, 22);
             this._socksNANetworksBox.TabIndex = 9;
-            //
-            //_IPv6Group
-            //
-            this._IPv6Group.Controls.AddRange(new System.Windows.Forms.Control[] {
-                this._IPv6PriorityLabel,
-                this._IPv6PriorityBox});
+            // 
+            // _useSocks
+            // 
+            this._useSocks.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this._useSocks.Location = new System.Drawing.Point(16, 3);
+            this._useSocks.Name = "_useSocks";
+            this._useSocks.Size = new System.Drawing.Size(160, 23);
+            this._useSocks.TabIndex = 1;
+            this._useSocks.CheckedChanged += new System.EventHandler(this.OnUseSocksOptionChanged);
+            // 
+            // _IPv6Group
+            // 
+            this._IPv6Group.Controls.Add(this._IPv6PriorityLabel);
+            this._IPv6Group.Controls.Add(this._IPv6PriorityBox);
+            this._IPv6Group.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this._IPv6Group.Location = new System.Drawing.Point(8, 144);
             this._IPv6Group.Name = "_IPv6Group";
-            this._IPv6Group.FlatStyle = FlatStyle.System;
             this._IPv6Group.Size = new System.Drawing.Size(416, 64);
             this._IPv6Group.TabIndex = 2;
             this._IPv6Group.TabStop = false;
-            this._IPv6Group.Text = "";
-            //
-            //_IPv6PriorityLabel
-            //
+            // 
+            // _IPv6PriorityLabel
+            // 
             this._IPv6PriorityLabel.Location = new System.Drawing.Point(8, 18);
             this._IPv6PriorityLabel.Name = "_IPv6PriorityLabel";
             this._IPv6PriorityLabel.Size = new System.Drawing.Size(208, 23);
             this._IPv6PriorityLabel.TabIndex = 0;
             this._IPv6PriorityLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            //
-            //_IPv6PriorityBox
-            //
+            // 
+            // _IPv6PriorityBox
+            // 
+            this._IPv6PriorityBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._IPv6PriorityBox.Location = new System.Drawing.Point(216, 18);
             this._IPv6PriorityBox.Name = "_IPv6PriorityBox";
-            this._IPv6PriorityBox.Size = new System.Drawing.Size(184, 19);
+            this._IPv6PriorityBox.Size = new System.Drawing.Size(184, 24);
             this._IPv6PriorityBox.TabIndex = 1;
-            this._IPv6PriorityBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            // 
+            // ConnectionOptionPanel
+            // 
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.Controls.Add(this._useSocks);
+            this.Controls.Add(this._socksGroup);
+            this.Controls.Add(this._IPv6Group);
+            this.Name = "ConnectionOptionPanel";
+            this._socksGroup.ResumeLayout(false);
+            this._socksGroup.PerformLayout();
+            this._IPv6Group.ResumeLayout(false);
+            this.ResumeLayout(false);
 
-            this.BackColor = SystemColors.Window;
-            this._socksGroup.ResumeLayout();
         }
         private void FillText() {
             StringResource sr = OptionDialogPlugin.Instance.Strings;

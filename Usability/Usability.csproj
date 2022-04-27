@@ -181,6 +181,12 @@
       <DependentUpon>AgentKeyListDialog.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="CommandOptionPanel.resx">
+      <DependentUpon>CommandOptionPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectionOptionPanel.resx">
+      <DependentUpon>ConnectionOptionPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DisplayOptionPanel.resx">
       <SubType>Designer</SubType>
       <DependentUpon>DisplayOptionPanel.cs</DependentUpon>
